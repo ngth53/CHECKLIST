@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist Tham Gia Nghiên Cứu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Checklist Tham Gia Nghiên Cứu</h1>
+    <form id="checklistForm">
+      <div class="checklist-item">
+        <label>
+          <input type="checkbox" id="consent">
+          Sẵn sàng và có khả năng cung cấp văn bản chấp thuận tham gia nghiên cứu.
+        </label>
+      </div>
+      <div class="checklist-item">
+        <label>
+          <input type="checkbox" id="age">
+          Đủ 18 tuổi vào ngày ký phiếu chấp thuận tham gia nghiên cứu.
+        </label>
+      </div>
+      <div class="checklist-item">
+        <label>
+          <input type="checkbox" id="diagnosis">
+          Có chẩn đoán ung thư đại trực tràng bằng mô học hoặc tế bào học.
+        </label>
+      </div>
+      <div class="checklist-item">
+        <label>
+          <input type="checkbox" id="life_expectancy">
+          Kỳ vọng sống thêm từ 3 tháng trở lên.
+        </label>
+      </div>
+      <div class="checklist-item">
+        <label>
+          <input type="checkbox" id="measurable_tumor">
+          Có ít nhất 1 tổn thương có thể đo lường được theo RECIST 1.1.
+        </label>
+      </div>
+      <div class="checklist-item">
+        <label>
+          <input type="checkbox" id="eco_g">
+          Có chỉ số ECOG 0,1 hoặc 2 trong vòng 14 ngày trước liều điều trị đầu tiên.
+        </label>
+      </div>
+      <div class="checklist-item">
+        <label>
+          <input type="checkbox" id="sample_tissue">
+          Có mẫu mô trước điều trị (mẫu lưu trữ hoặc mô tươi).
+        </label>
+      </div>
+      <div class="checklist-item">
+        <label>
+          <input type="checkbox" id="pregnancy_test">
+          Kết quả thử thai âm tính trong vòng 72 giờ trước liều đầu tiên.
+        </label>
+      </div>
+      <div class="checklist-item">
+        <label>
+          <input type="checkbox" id="function_status">
+          Chức năng cơ quan đầy đủ, thu thập trong vòng 14 ngày trước điều trị.
+        </label>
+      </div>
+      <div class="checklist-item">
+        <label>
+          <input type="checkbox" id="contraception_women">
+          Đồng ý tránh quan hệ tình dục hoặc sử dụng biện pháp tránh thai trong thời gian điều trị.
+        </label>
+      </div>
+      <div class="checklist-item">
+        <label>
+          <input type="checkbox" id="contraception_men">
+          Đồng ý không có con trong thời gian điều trị.
+        </label>
+      </div>
+      <button type="submit">Hoàn tất</button>
+    </form>
+    <div id="result" style="display:none;">
+      <h3>Kết quả Checklist:</h3>
+      <ul id="resultList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
